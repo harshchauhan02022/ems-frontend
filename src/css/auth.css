@@ -1,0 +1,11 @@
+.signup-form{
+width: 70% !important;
+}
+.signup-button{
+ background-color: #000 !important;
+ color: #fff !important;
+ width: 100%;
+}
+.google-icon{
+ width: 30px;
+}
