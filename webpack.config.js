@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
- entry: { index: './src/index.js', register: './src/components/register.html', login: './src/components/login.html' },
+ entry: { index: './src/index.js', register: './src/components/register.html', login: './src/components/login.html', about: './src/components/about.html', contact: './src/components/contact.html'},
  output: {
   filename: '[name].bundle.js',
   path: path.resolve(__dirname, 'dist'),
@@ -30,6 +30,16 @@ module.exports = {
    template: './src/components/login.html',
    filename: 'login.html',
    chunks: ['login'],
+  }),
+  new HtmlWebpackPlugin({
+   template: './src/components/about.html',
+   filename: 'about.html',
+   chunks: ['about'],
+  }),
+  new HtmlWebpackPlugin({
+   template: './src/components/contact.html',
+   filename: 'contact.html',
+   chunks: ['contact'],
   })
  ],
  devServer: {
