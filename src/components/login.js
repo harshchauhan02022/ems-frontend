@@ -18,7 +18,7 @@ function login() {
      text: data.message,
     });
 
-    localStorage.setItem("token",data.token);
+    localStorage.setItem("token", data.token);
     window.location.href = "index.html"
    } else {
     Swal.fire({
@@ -33,6 +33,6 @@ function login() {
 }
 
 const token = localStorage.getItem("token");
-if (token!=="" && token!==null && token!==undefined) {
- window.location.href="index.html"
+if (token !== "" && token !== null && token !== undefined) {
+ window.location.href = "index.html"
 }
