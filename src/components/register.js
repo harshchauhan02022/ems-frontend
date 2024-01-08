@@ -1,4 +1,7 @@
-const { error } = require("console");
+const token = localStorage.getItem("token");
+if (token!=="" && token!==null && token!==undefined) {
+ window.location.href="index.html"
+}
 
 // Register
 function register() {
